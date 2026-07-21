@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #1f2937;
+}
+
+.checkout-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #d9dee8;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(20, 30, 50, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.payment-summary {
+    margin-bottom: 22px;
+    padding: 16px;
+    background: #f7f8fb;
+    border-radius: 10px;
+}
+
+.reference {
+    margin-bottom: 0;
+    color: #667085;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #cbd2dc;
+}
+
+button {
+    margin-top: 18px;
+    border: none;
+    background: #1f5eff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+#status {
+    min-height: 24px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.message-panel {
+    text-align: center;
+}

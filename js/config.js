@@ -1,5 +1,5 @@
 const CONFIG = {
-    AUTH_BASE: "https://aut1.example.com",
+    AUTH_BASE: "https://pokip.unrealcake8.site",
 
     EMAILJS_PUBLIC_KEY: "YOUR_PUBLIC_KEY",
     EMAILJS_SERVICE_ID: "YOUR_SERVICE_ID",

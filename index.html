@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKIP Checkout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="checkout-card">
+        <section id="invalidRequest" class="message-panel" hidden>
+            <h1>POKIP Systems</h1>
+            <p>It looks like you don't have a proper request.</p>
+        </section>
+
+        <section id="checkout" hidden>
+            <h1>POKIP Systems</h1>
+
+            <div class="payment-summary">
+                <p>
+                    You need to pay
+                    <strong id="merchantName">Merchant</strong>
+                    a payment of
+                    <strong id="paymentAmount">POK0.00</strong>.
+                </p>
+
+                <p class="reference">
+                    Reference:
+                    <span id="paymentReference">Not provided</span>
+                </p>
+            </div>
+
+            <label for="cardNumber">POKIP Card Number</label>
+            <input
+                id="cardNumber"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="POKIP Card Number"
+            >
+
+            <label for="cardholderId">Cardholder ID</label>
+            <input
+                id="cardholderId"
+                type="text"
+                autocomplete="off"
+                placeholder="Cardholder ID"
+            >
+
+            <button id="payBtn" type="button">Pay</button>
+
+            <p id="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
